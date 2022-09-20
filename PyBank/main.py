@@ -31,9 +31,8 @@ with open(csvpath) as csvfile:
     for i in range(len(all_rows) - 1): 
         curr_profit = all_rows[i][1]
         next_profit = all_rows[i + 1][1]
-
-    change = next_profit - curr_profit
-    changes.append(change)
+        change = next_profit - curr_profit
+        changes.append(change)
 
     #Get average changes
 
